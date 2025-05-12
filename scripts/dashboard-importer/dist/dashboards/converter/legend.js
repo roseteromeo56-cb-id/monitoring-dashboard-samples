@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.replaceDoubleBraces = void 0;
+exports.replaceDoubleBraces = replaceDoubleBraces;
 /**
  * Grafana legends follow the format of {{var}}
  * Cloud ops legends using prometheus metrics follow the form ${labels.var}
@@ -23,5 +23,4 @@ exports.replaceDoubleBraces = void 0;
 function replaceDoubleBraces(legend) {
     return legend.replace(/{{(.+?)}}/g, (_, legendVar) => `$\{labels.${legendVar.trim()}}`);
 }
-exports.replaceDoubleBraces = replaceDoubleBraces;
 //# sourceMappingURL=legend.js.map

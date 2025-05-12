@@ -18,6 +18,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = Test;
 const assert_1 = __importDefault(require("assert"));
 const templating_1 = require("./templating");
 const test_utils_1 = require("../../../common/testing/test_utils");
@@ -99,5 +100,4 @@ function Test() {
         TestIntervalTemplateVariable,
     ]);
 }
-exports.default = Test;
 //# sourceMappingURL=templating_test.js.map

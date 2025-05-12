@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createTextWidget = void 0;
+exports.createTextWidget = createTextWidget;
 // Creates a Text Widget
 function createTextWidget(title, content, format = 'MARKDOWN') {
     return {
@@ -26,5 +26,4 @@ function createTextWidget(title, content, format = 'MARKDOWN') {
         },
     };
 }
-exports.createTextWidget = createTextWidget;
 //# sourceMappingURL=text.js.map

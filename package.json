@@ -1,0 +1,30 @@
+{
+  "name": "monitoring-dashboard-samples",
+  "version": "1.0.0",
+  "description": "Samples for Cloud Monitoring Dashboards API",
+  "scripts": {
+    "start": "cd scripts/dashboard-importer && npm run start",
+    "test": "cd scripts/dashboard-importer && npm run test",
+    "dev": "cd scripts/dashboard-importer && npm run build && npx http-server -a localhost -p 8080 -o ./README.md",
+    "import": "cd scripts/dashboard-importer && ./import.sh",
+    "upload": "cd scripts/dashboard-importer && ./upload.sh",
+    "tools": "cd scripts/dashboard-importer && npm run build && echo 'Dashboard tools are ready. Use one of the following scripts:' && echo '- npm run import -- <JSON_PATH> [PROJECT_ID]' && echo '- npm run test' && echo '- npm run upload -- <DIRECTORY> <PROJECT_ID>'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoogleCloudPlatform/monitoring-dashboard-samples.git"
+  },
+  "keywords": [
+    "Google",
+    "GoogleCloud",
+    "CloudMonitoring",
+    "Dashboards",
+    "Monitoring"
+  ],
+  "author": "Google",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/GoogleCloudPlatform/monitoring-dashboard-samples/issues"
+  },
+  "homepage": "https://github.com/GoogleCloudPlatform/monitoring-dashboard-samples#readme"
+}

@@ -15,7 +15,8 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.convertMatchToRegexMatch = exports.getExpressions = void 0;
+exports.getExpressions = getExpressions;
+exports.convertMatchToRegexMatch = convertMatchToRegexMatch;
 const result_1 = require("../../common/result");
 const legend_1 = require("./legend");
 const templating_1 = require("./template_variables/templating");
@@ -43,7 +44,6 @@ function getExpressions(targets, panelTitle, templateVariables = new Map()) {
     }
     return (0, result_1.success)(expressions, warnings);
 }
-exports.getExpressions = getExpressions;
 /**
  * Function replaces regular matches with TVs with regex match
  */
@@ -54,5 +54,4 @@ function convertMatchToRegexMatch(expression) {
     // $3 expression rhs - text that starts with $ in quotes
     return expression.replaceAll(/(\w+\s*)(=)(\s*"\$[^\s\"]+")/g, '$1=~$3');
 }
-exports.convertMatchToRegexMatch = convertMatchToRegexMatch;
 //# sourceMappingURL=expression.js.map

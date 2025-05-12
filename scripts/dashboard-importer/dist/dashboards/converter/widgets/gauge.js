@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createGaugeChart = void 0;
+exports.createGaugeChart = createGaugeChart;
 // Creates a Gauge Widget
 function createGaugeChart(title, expr, lowerBound = 0, upperBound = 1) {
     return {
@@ -32,5 +32,4 @@ function createGaugeChart(title, expr, lowerBound = 0, upperBound = 1) {
         title: title,
     };
 }
-exports.createGaugeChart = createGaugeChart;
 //# sourceMappingURL=gauge.js.map

@@ -15,7 +15,8 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getDashboardFilterFromLabelKey = exports.getLabelKey = void 0;
+exports.getLabelKey = getLabelKey;
+exports.getDashboardFilterFromLabelKey = getDashboardFilterFromLabelKey;
 const result_1 = require("../../../common/result");
 const constants_1 = require("./constants");
 // Utility functions for parsing TV queries that start with 'label_values'
@@ -56,7 +57,6 @@ function getLabelKey(query) {
             ]);
     }
 }
-exports.getLabelKey = getLabelKey;
 /**
  * Constructs a dashboard filter from a query by extracting the label key and
  * figuring out if it's a resource or metric label
@@ -89,5 +89,4 @@ function getDashboardFilterFromLabelKey(queryString, templateVariable) {
     }
     return (0, result_1.success)(dashboardFilter, [...labelKeyResult.warnings], [...labelKeyResult.errors]);
 }
-exports.getDashboardFilterFromLabelKey = getDashboardFilterFromLabelKey;
 //# sourceMappingURL=label_values.js.map

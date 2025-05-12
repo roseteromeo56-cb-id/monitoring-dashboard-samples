@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.hasNoOverlap = void 0;
+exports.hasNoOverlap = hasNoOverlap;
 // Checks whethers tiles have overlap
 function hasNoOverlap(tiles) {
     for (let i = 0; i < tiles.length; i++) {
@@ -29,7 +29,6 @@ function hasNoOverlap(tiles) {
     }
     return true;
 }
-exports.hasNoOverlap = hasNoOverlap;
 function doTilesOverlap(t1, t2) {
     if (t1.xPos >= t2.xPos + t2.width || t2.xPos >= t1.xPos + t1.width) {
         return false;

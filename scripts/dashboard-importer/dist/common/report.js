@@ -15,7 +15,11 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.generateWarningSummary = exports.generateEmptyReport = exports.padZeros = exports.createReportId = exports.getDateString = void 0;
+exports.getDateString = getDateString;
+exports.createReportId = createReportId;
+exports.padZeros = padZeros;
+exports.generateEmptyReport = generateEmptyReport;
+exports.generateWarningSummary = generateWarningSummary;
 const constants_1 = require("../dashboards/converter/layout/constants");
 // Function that generates a date string for report directories
 function getDateString(date) {
@@ -24,7 +28,6 @@ function getDateString(date) {
     const day = date.getDate();
     return `${year}-${month}-${day}`;
 }
-exports.getDateString = getDateString;
 // Function that generates a time based report ID for a job
 function createReportId(date) {
     const hour = padZeros(date.getHours());
@@ -32,13 +35,11 @@ function createReportId(date) {
     const second = padZeros(date.getSeconds());
     return `${hour}:${minute}:${second}`;
 }
-exports.createReportId = createReportId;
 // Function that pads a integer time with necessary leading zeros
 function padZeros(num) {
     const s = num.toString();
     return s.length === 1 ? `0${s}` : s;
 }
-exports.padZeros = padZeros;
 // Function that generates an empty report object based on the file path
 function generateEmptyReport(jsonFilePath) {
     const date = new Date();
@@ -54,7 +55,6 @@ function generateEmptyReport(jsonFilePath) {
         date: dateString,
     };
 }
-exports.generateEmptyReport = generateEmptyReport;
 // Condenses a list of warnings into a summarized format
 function generateWarningSummary(warnings, numPanels) {
     let hasCollapsibleGroupWarning = false;
@@ -81,5 +81,4 @@ function generateWarningSummary(warnings, numPanels) {
     warningsArr.sort((a, b) => a[1] - b[1]);
     return warningsArr.map(warning => warning[0]).join('\n');
 }
-exports.generateWarningSummary = generateWarningSummary;
 //# sourceMappingURL=report.js.map

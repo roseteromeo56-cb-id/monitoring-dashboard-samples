@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.runTests = void 0;
+exports.runTests = runTests;
 const logger_1 = require("../logger");
 // Function that runs the list of provided tests and logs the status
 function runTests(tests) {
@@ -31,5 +31,4 @@ function runTests(tests) {
         }
     }
 }
-exports.runTests = runTests;
 //# sourceMappingURL=test_utils.js.map

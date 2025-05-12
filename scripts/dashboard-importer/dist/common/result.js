@@ -15,7 +15,9 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.warning = exports.error = exports.success = void 0;
+exports.success = success;
+exports.error = error;
+exports.warning = warning;
 // Function that constructs a sucesss results object
 function success(result, warnings = [], errors = []) {
     return {
@@ -25,7 +27,6 @@ function success(result, warnings = [], errors = []) {
         isSuccess: true,
     };
 }
-exports.success = success;
 // Function that constructs an error results object
 function error(errors) {
     return {
@@ -35,7 +36,6 @@ function error(errors) {
         isSuccess: false,
     };
 }
-exports.error = error;
 // Function that constructs an warning results object
 function warning(warnings) {
     return {
@@ -45,5 +45,4 @@ function warning(warnings) {
         isSuccess: false,
     };
 }
-exports.warning = warning;
 //# sourceMappingURL=result.js.map
