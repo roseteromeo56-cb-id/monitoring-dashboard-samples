@@ -15,7 +15,8 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.updateGrid = exports.getYOffsetToFit = void 0;
+exports.getYOffsetToFit = getYOffsetToFit;
+exports.updateGrid = updateGrid;
 /**
  *  This algorithm returns what the yOffset should be to prevent overlaps
  *
@@ -47,7 +48,6 @@ yOffSet) {
     }
     return newYOffSet;
 }
-exports.getYOffsetToFit = getYOffsetToFit;
 /**
  * Checks if the slated tile has any overlaps and updates the grid if there are
  * no overlap
@@ -72,5 +72,4 @@ function updateGrid(tile, grid) {
     }
     return true;
 }
-exports.updateGrid = updateGrid;
 //# sourceMappingURL=layout_utils.js.map

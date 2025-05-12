@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createBasicChart = void 0;
+exports.createBasicChart = createBasicChart;
 // Creates a Basic Chart Widget (Line, Stacked Bar, Stacked Area)
 function createBasicChart(plotType, title, expressions) {
     return {
@@ -31,5 +31,4 @@ function createBasicChart(plotType, title, expressions) {
         },
     };
 }
-exports.createBasicChart = createBasicChart;
 //# sourceMappingURL=chart.js.map

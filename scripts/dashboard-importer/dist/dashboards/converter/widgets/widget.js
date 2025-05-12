@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.constructWidget = void 0;
+exports.constructWidget = constructWidget;
 const result_1 = require("../../../common/result");
 const expression_1 = require("../expression");
 const chart_1 = require("./chart");
@@ -82,5 +82,4 @@ function constructWidget(panel, targets, templateVariables = new Map()) {
     }
     return (0, result_1.success)(widget, [...warnings, ...expressionsResult.warnings]);
 }
-exports.constructWidget = constructWidget;
 //# sourceMappingURL=widget.js.map

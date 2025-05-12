@@ -18,6 +18,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = test;
 const converter_1 = __importDefault(require("../converter/converter"));
 const assert_1 = __importDefault(require("assert"));
 const test_dashboard_1 = require("./testing/test_dashboard");
@@ -110,5 +111,4 @@ function test() {
         testOverlapReconciliation,
     ]);
 }
-exports.default = test;
 //# sourceMappingURL=converter_test.js.map

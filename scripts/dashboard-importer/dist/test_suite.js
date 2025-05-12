@@ -18,11 +18,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = runTestSuite;
 const templating_test_1 = __importDefault(require("./dashboards/converter/template_variables/templating_test"));
 const converter_test_1 = __importDefault(require("./dashboards/converter/converter_test"));
 function runTestSuite() {
     (0, templating_test_1.default)();
     (0, converter_test_1.default)();
 }
-exports.default = runTestSuite;
 //# sourceMappingURL=test_suite.js.map

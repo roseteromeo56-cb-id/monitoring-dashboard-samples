@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.convertQueryTemplateVariable = void 0;
+exports.convertQueryTemplateVariable = convertQueryTemplateVariable;
 const result_1 = require("../../../common/result");
 const constants_1 = require("./constants");
 const label_values_1 = require("./label_values");
@@ -39,5 +39,4 @@ function convertQueryTemplateVariable(templateVariable) {
         `Template variable '${templateVariable.name}' was skipped because queries that start with '${queryString}' are not supported`,
     ]);
 }
-exports.convertQueryTemplateVariable = convertQueryTemplateVariable;
 //# sourceMappingURL=query.js.map
