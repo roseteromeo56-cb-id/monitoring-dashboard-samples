@@ -5,7 +5,9 @@
   "scripts": {
     "start": "cd scripts/dashboard-importer && npm run start",
     "test": "cd scripts/dashboard-importer && npm run test",
-    "dev": "cd scripts/dashboard-importer && npm run test"
+    "dev": "cd scripts/dashboard-importer && npm run build && echo 'Dashboard tools are ready. Use one of the following scripts:' && echo '- npm run import -- <JSON_PATH> [PROJECT_ID]' && echo '- npm run test' && echo '- npm run upload -- <DIRECTORY> <PROJECT_ID>'",
+    "import": "cd scripts/dashboard-importer && ./import.sh",
+    "upload": "cd scripts/dashboard-importer && ./upload.sh"
   },
   "repository": {
     "type": "git",
