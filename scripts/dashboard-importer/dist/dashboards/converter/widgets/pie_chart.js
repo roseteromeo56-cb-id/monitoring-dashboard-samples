@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createPieChart = void 0;
+exports.createPieChart = createPieChart;
 // Creates a Pie Chart Widget
 function createPieChart(title, expression, pieType) {
     return {
@@ -32,5 +32,4 @@ function createPieChart(title, expression, pieType) {
         },
     };
 }
-exports.createPieChart = createPieChart;
 //# sourceMappingURL=pie_chart.js.map

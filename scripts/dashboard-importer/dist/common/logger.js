@@ -15,26 +15,25 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.logError = exports.logWarning = exports.logSuccess = exports.logInfo = void 0;
+exports.logInfo = logInfo;
+exports.logSuccess = logSuccess;
+exports.logWarning = logWarning;
+exports.logError = logError;
 // Simple utilities to console logs in colors
 // Basic Logging
 function logInfo(message) {
     console.log(message);
 }
-exports.logInfo = logInfo;
 // Log message in green
 function logSuccess(message) {
     console.log(`\x1b[32m${message}\x1b[0m`);
 }
-exports.logSuccess = logSuccess;
 // Log message in yellow
 function logWarning(message) {
     console.log(`\x1b[33mWarning: ${message}\x1b[0m`);
 }
-exports.logWarning = logWarning;
 // Log message in red
 function logError(message) {
     console.log(`\x1b[31mERROR: ${message}\x1b[0m`);
 }
-exports.logError = logError;
 //# sourceMappingURL=logger.js.map

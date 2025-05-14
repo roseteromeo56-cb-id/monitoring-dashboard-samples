@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createScoreCard = void 0;
+exports.createScoreCard = createScoreCard;
 // Creates a Scorecard Widget
 function createScoreCard(title, expr, sparkChartType = 'SPARK_LINE') {
     return {
@@ -32,5 +32,4 @@ function createScoreCard(title, expr, sparkChartType = 'SPARK_LINE') {
         title: title,
     };
 }
-exports.createScoreCard = createScoreCard;
 //# sourceMappingURL=scorecard.js.map

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.parseRowPanels = void 0;
+exports.parseRowPanels = parseRowPanels;
 const constants_1 = require("./constants");
 /**
  * Grafana Dashboards use a legacy 'rows' attribute to store panels
@@ -63,5 +63,4 @@ function parseRowPanels(rows) {
     }
     return outputPanels;
 }
-exports.parseRowPanels = parseRowPanels;
 //# sourceMappingURL=legacy_rows.js.map

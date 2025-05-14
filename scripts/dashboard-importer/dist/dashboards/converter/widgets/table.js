@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createTable = void 0;
+exports.createTable = createTable;
 // Creates a Table Widget
 function createTable(title, expression) {
     return {
@@ -38,5 +38,4 @@ function createTable(title, expression) {
         },
     };
 }
-exports.createTable = createTable;
 //# sourceMappingURL=table.js.map
